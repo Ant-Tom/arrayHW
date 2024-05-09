@@ -15,30 +15,54 @@ public class Main {
 
         System.out.println("Task 2");
 
-        for (int number : numbers) {
-            System.out.print(number + ",");
+        for (int number = 0; number < numbers.length; number++) {
+            if (number < numbers.length - 1) {
+                System.out.print(numbers[number] + ",");
+            } else {
+                System.out.print(numbers[number]);
+            }
         }
         System.out.println();
-        for (double fractionalNumber : fractionalNumbers) {
-            System.out.print(fractionalNumber + ",");
+        for (int fractionalNumber = 0; fractionalNumber < fractionalNumbers.length; fractionalNumber++) {
+            if (fractionalNumber < fractionalNumbers.length - 1) {
+                System.out.print(fractionalNumbers[fractionalNumber] + ",");
+            } else {
+                System.out.print(fractionalNumbers[fractionalNumber]);
+            }
         }
         System.out.println();
-        for (String line : lines) {
-            System.out.print(line + ",");
+        for (int i = 0; i < lines.length; i++) {
+            if (i < lines.length - 1) {
+                System.out.print(lines[i] + ",");
+            } else {
+                System.out.print(lines[i]);
+            }
         }
         System.out.println();
         System.out.println("Task 3");
 
         for (int i = numbers.length - 1; i >= 0; i--) {
-            System.out.print(numbers[i] + ",");
+            if (i > 0) {
+                System.out.print(numbers[i] + ",");
+            } else {
+                System.out.print(numbers[i]);
+            }
         }
         System.out.println();
         for (int i = fractionalNumbers.length - 1; i >= 0; i--) {
-            System.out.print(fractionalNumbers[i] + ",");
+            if (i > 0) {
+                System.out.print(fractionalNumbers[i] + ",");
+            } else {
+                System.out.print(fractionalNumbers[i]);
+            }
         }
         System.out.println();
         for (int i = lines.length - 1; i >= 0; i--) {
-            System.out.print(lines[i] + ",");
+            if (i > 0) {
+                System.out.print(lines[i] + ",");
+            } else {
+                System.out.print(lines[i]);
+            }
         }
         System.out.println();
         System.out.println("Task 4");
